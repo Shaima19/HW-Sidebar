@@ -1,0 +1,70 @@
+/* *COMMON CSS STARTS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* *COMMON CSS ENDS */
+/* *NAVBAR STARTS */
+nav {
+    padding: 30px 100px;
+    border: 1px solid #eee;
+}
+nav .menu{
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* *NAVBAR ENDS */
+/* *SIDEBAR STARTS */
+.sidebar {
+    position: fixed;
+    inset: 0;
+    background-color: #0000009c;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.sidebar_active {
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar_cnt {
+    width: 350px;
+    height: 100vh;
+    background-color: #fff;
+    margin-left: auto;
+    padding: 50px;
+    transform: translateX(100%);
+}
+.sidebar_active .sidebar_cnt{
+    transform: translateX(0%);
+}
+.sidebar_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.sidebar_cnt ul li{
+    padding: 15px 0; 
+}
+.sidebar_cnt ul li a{
+    font-size: 18px;
+    color: #000000dc;
+   
+}
+/* *SIDEBAR ENDS */
